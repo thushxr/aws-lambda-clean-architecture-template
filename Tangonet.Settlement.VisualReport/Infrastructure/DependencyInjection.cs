@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Tangonet.Settlement.VisualReport.Core;
+using Tangonet.Settlement.VisualReport.Infrastructure.Helpers;
 
-namespace Tangonet.Settlement.VisualReport.Infrastructure
+namespace Tangonet.Settlement.VisualReport.Infrastructure;
+
+public static class DependencyInjection
 {
-    internal class DependencyInjection
+    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
     {
+        services.AddScoped<DatabaseHelper>();
+        services.AddCoreServices();
+
+        return services;
     }
 }

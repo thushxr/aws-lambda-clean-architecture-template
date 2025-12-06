@@ -1,11 +1,13 @@
 using Amazon.Lambda.Core;
+using System.Text.Json;
+using Tangonet.Settlement.VisualReport.Infrastructure.Helpers;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
-namespace Tangonet.Settlement.VisualReport;
+namespace Tangonet.Settlement.VisualReport.Lambda;
 
-public class Function
+public class Function : FunctionBase
 {
     
     /// <summary>
@@ -14,8 +16,21 @@ public class Function
     /// <param name="input">The event for the Lambda function handler to process.</param>
     /// <param name="context">The ILambdaContext that provides methods for logging and describing the Lambda environment.</param>
     /// <returns></returns>
-    public string FunctionHandler(string input, ILambdaContext context)
+    public async Task<string> FunctionHandler(string request, ILambdaContext context)
     {
-        return input.ToUpper();
+        Logger.SetLogger(context.Logger);
+        Logger.Trace($"Program started : {JsonSerializer.Serialize(request)}");
+        try
+        {
+            Logger.Info("Setting secret manager data");
+            await SecretManagerHelper.SetSecretManagerData();
+        }
+        catch (Exception ex)
+        {
+            Logger.Error($"Error setting secret manager data: {ex.Message}");
+            return null;
+        }
+
+        return null;
     }
 }

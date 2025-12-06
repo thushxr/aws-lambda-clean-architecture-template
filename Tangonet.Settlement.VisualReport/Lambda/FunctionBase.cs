@@ -1,12 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Tangonet.Settlement.VisualReport.Application;
+using Tangonet.Settlement.VisualReport.Core.Helpers;
+using Tangonet.Settlement.VisualReport.Infrastructure;
 
-namespace Tangonet.Settlement.VisualReport.Lambda
+namespace Tangonet.Settlement.VisualReport.Lambda;
+
+public class FunctionBase
 {
-    internal class FunctionBase
+    public readonly Log Logger;
+
+    public FunctionBase()
     {
+        var serviceCollection = new ServiceCollection()
+            .AddInfrastructureServices()
+            .AddApplicationServices();
+
+        var serviceProvider = serviceCollection.BuildServiceProvider();
+        Logger = serviceProvider.GetRequiredService<Log>();
     }
 }
