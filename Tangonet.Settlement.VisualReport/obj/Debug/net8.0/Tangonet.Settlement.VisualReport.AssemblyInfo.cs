@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tangonet.Settlement.VisualReport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78166f9faf94c0946be29b53c00594e1b7e073d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+047118874fce58a8ada806f5966c6fb2aa375ef5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tangonet.Settlement.VisualReport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tangonet.Settlement.VisualReport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
