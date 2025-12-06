@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2SxV+wrHg8w=",
+  "success": true,
+  "projectFilePath": "D:\\Thushar\\code\\Dotnet\\Tangonet.Settlement.VisualReport\\Tangonet.Settlement.VisualReport\\Tangonet.Settlement.VisualReport.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thushar.p\\.nuget\\packages\\amazon.lambda.core\\2.5.0\\amazon.lambda.core.2.5.0.nupkg.sha512",
+    "C:\\Users\\thushar.p\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.4.4\\amazon.lambda.serialization.systemtextjson.2.4.4.nupkg.sha512",
+    "C:\\Users\\thushar.p\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.22\\microsoft.netcore.app.crossgen2.win-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}
