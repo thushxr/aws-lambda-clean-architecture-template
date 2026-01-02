@@ -40,5 +40,6 @@
     <Folder Include="Core\Enums\" />
     <Folder Include="Infrastructure\ExternalServices\" />
     <Folder Include="Infrastructure\Repositories\" />
+	<None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>

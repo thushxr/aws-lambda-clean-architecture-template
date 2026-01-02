@@ -1,49 +1,83 @@
-# AWS Lambda Empty Function Project
+# AWS Lambda Clean Architecture Template (.NET)
 
-This starter project consists of:
-* Function.cs - class file containing a class with a single function handler method
-* aws-lambda-tools-defaults.json - default argument settings for use with Visual Studio and command line deployment tools for AWS
+A production-ready **AWS Lambda project template for .NET**, built using **Clean Architecture**, **microservice principles**, and **AWS Lambda**.
+This NuGet template enables teams to quickly bootstrap scalable, maintainable Lambda-based service with a consistent architectural foundation.
 
-You may also have a test project depending on the options selected.
+### Features
 
-The generated function handler is a simple method accepting a string argument that returns the uppercase equivalent of the input string. Replace the body of this method, and parameters, to suit your needs. 
+- AWS Lambda using **.NET 8**
+- Clean Architecture layering  
+  - Application  
+  - Core (Domain)  
+  - Infrastructure  
+- Dependency Injection
+- Secrets Manager integration
+- Dapper + MySQL support (optional)
+- Production-ready folder structure
 
-## Here are some steps to follow from Visual Studio:
+### Requirements
 
-To deploy your function to AWS Lambda, right click the project in Solution Explorer and select *Publish to AWS Lambda*.
+- .NET SDK **8.0** or later
 
-To view your deployed function open its Function View window by double-clicking the function name shown beneath the AWS Lambda node in the AWS Explorer tree.
+Install the AWS Lambda tools if not already installed:
 
-To perform testing against your deployed function use the Test Invoke tab in the opened Function View window.
-
-To configure event sources for your deployed function, for example to have your function invoked when an object is created in an Amazon S3 bucket, use the Event Sources tab in the opened Function View window.
-
-To update the runtime configuration of your deployed function use the Configuration tab in the opened Function View window.
-
-To view execution logs of invocations of your function use the Logs tab in the opened Function View window.
-
-## Here are some steps to follow to get started from the command line:
-
-Once you have edited your template and code you can deploy your application using the [Amazon.Lambda.Tools Global Tool](https://github.com/aws/aws-extensions-for-dotnet-cli#aws-lambda-amazonlambdatools) from the command line.
-
-Install Amazon.Lambda.Tools Global Tools if not already installed.
-```
-    dotnet tool install -g Amazon.Lambda.Tools
+```bash
+dotnet tool install -g Amazon.Lambda.Tools
 ```
 
-If already installed check if new version is available.
-```
-    dotnet tool update -g Amazon.Lambda.Tools
+### Installation
+
+- Install this template from Nuget
+
+```bash
+dotnet new install Thushxr.AwsLambda.CleanArchitecture
 ```
 
-Execute unit tests
+### Verify installation:
 ```
-    cd "Company.CategoryOrProject.ProjectName/test/Company.CategoryOrProject.ProjectName.Tests"
-    dotnet test
+dotnet new --list
 ```
 
-Deploy function to AWS Lambda
+### Create a New Lambda Project
+```bash
+dotnet new clean-lambda -n Company.ProjectOrCategory.ProjectName
 ```
-    cd "Company.CategoryOrProject.ProjectName/src/Company.CategoryOrProject.ProjectName"
-    dotnet lambda deploy-function
+
+### Project Structure
+```mathematica
+root/
+├─ Application/
+│  ├─ Dtos/ --- request and response dto
+│  ├─ Interfaces/ --- service interface
+│  └─ Services/ -- service/repository implementation
+│
+├─ Core/
+│  ├─ Entities/ --- business entites and logic
+│  ├─ Enums/ --- enums
+│  └─ Interfaces/ --- repository/service interface
+│
+├─ Infrastructure/
+│  ├─ ExternalServices/ --- external service implementation
+│  └─ Repositories/ --- repository interfaces
+│
+└─ Lambda/
+   ├─ Function.cs --- main function
+   ├─ FunctionBase.cs --- base Function
+   ├─ Function.csproj
+   └─ aws-lambda-tools-defaults.json
 ```
+
+### Architecture Overview
+- Core
+  - Contains domain entities, enums, and business interfaces.
+  - No external dependencies.
+- Application
+  - Contains application-level logic, DTOs, and service interfaces.
+- Infrastructure
+  - Implements external dependencies such as databases, AWS services, and third-party APIs
+- Function
+  - AWS Lambda entry point and configuration.
+
+
+### Repository
+Source code and documentation: https://github.com/thushxr/aws-lambda-clean-architecture-template
