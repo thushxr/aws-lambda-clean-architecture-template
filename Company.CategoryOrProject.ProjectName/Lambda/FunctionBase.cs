@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Tangonet.Settlement.VisualReport.Application;
-using Tangonet.Settlement.VisualReport.Core.Helpers;
-using Tangonet.Settlement.VisualReport.Infrastructure;
+using Company.CategoryOrProject.ProjectName.Application;
+using Company.CategoryOrProject.ProjectName.Core.Helpers;
+using Company.CategoryOrProject.ProjectName.Infrastructure;
 
-namespace Tangonet.Settlement.VisualReport.Lambda;
+namespace Company.CategoryOrProject.ProjectName.Lambda;
 
 public class FunctionBase
 {

@@ -1,8 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Data;
-using Tangonet.Settlement.VisualReport.Core.Helpers;
+using Company.CategoryOrProject.ProjectName.Core.Helpers;
 
-namespace Tangonet.Settlement.VisualReport.Infrastructure.Helpers;
+namespace Company.CategoryOrProject.ProjectName.Infrastructure.Helpers;
 
 public class DatabaseHelper(Log log)
 {

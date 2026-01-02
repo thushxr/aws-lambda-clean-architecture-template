@@ -2,9 +2,9 @@
 using Amazon.SecretsManager;
 using Amazon.SecretsManager.Model;
 using Newtonsoft.Json.Linq;
-using Tangonet.Settlement.VisualReport.Core.Consts;
+using Company.CategoryOrProject.ProjectName.Core.Consts;
 
-namespace Tangonet.Settlement.VisualReport.Infrastructure.Helpers;
+namespace Company.CategoryOrProject.ProjectName.Infrastructure.Helpers;
 
 public class SecretManagerHelper
 {

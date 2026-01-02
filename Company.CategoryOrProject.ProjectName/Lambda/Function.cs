@@ -1,11 +1,11 @@
 using Amazon.Lambda.Core;
 using System.Text.Json;
-using Tangonet.Settlement.VisualReport.Infrastructure.Helpers;
+using Company.CategoryOrProject.ProjectName.Infrastructure.Helpers;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
-namespace Tangonet.Settlement.VisualReport.Lambda;
+namespace Company.CategoryOrProject.ProjectName.Lambda;
 
 public class Function : FunctionBase
 {

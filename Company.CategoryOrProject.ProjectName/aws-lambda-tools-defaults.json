@@ -12,5 +12,5 @@
   "function-runtime": "dotnet8",
   "function-memory-size": 512,
   "function-timeout": 30,
-  "function-handler": "Tangonet.Settlement.VisualReport::Tangonet.Settlement.VisualReport.Function::FunctionHandler"
+  "function-handler": "Company.CategoryOrProject.ProjectName::Company.CategoryOrProject.ProjectName.Function::FunctionHandler"
 }

@@ -1,4 +1,4 @@
-﻿namespace Tangonet.Settlement.VisualReport.Core.Consts;
+﻿namespace Company.CategoryOrProject.ProjectName.Core.Consts;
 
 public class EnvironmentVariableConsts
 {

@@ -1,7 +1,7 @@
 ﻿using Amazon.Lambda.Core;
 using System.Runtime.CompilerServices;
 
-namespace Tangonet.Settlement.VisualReport.Core.Helpers;
+namespace Company.CategoryOrProject.ProjectName.Core.Helpers;
 
 public class Log
 {

@@ -38,12 +38,12 @@ If already installed check if new version is available.
 
 Execute unit tests
 ```
-    cd "Tangonet.Settlement.VisualReport/test/Tangonet.Settlement.VisualReport.Tests"
+    cd "Company.CategoryOrProject.ProjectName/test/Company.CategoryOrProject.ProjectName.Tests"
     dotnet test
 ```
 
 Deploy function to AWS Lambda
 ```
-    cd "Tangonet.Settlement.VisualReport/src/Tangonet.Settlement.VisualReport"
+    cd "Company.CategoryOrProject.ProjectName/src/Company.CategoryOrProject.ProjectName"
     dotnet lambda deploy-function
 ```

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "thushxr",
+  "classifications": [
+      "AWS Lambda",
+      ".NET", 
+      "C#",
+      "Clean Architecture"
+    ],
+  "identity": "Thushxr.Lambda.CleanArchitecture",
+  "name": "AWS Lambda with Clean Architecture",
+  "description": "A Solution Template for AWS Lambda which follows clean Architecture",
+  "shortName": "clean-lambda",
+  "groupIdentity": "Thushxr.Lambda",
+  "sourceName": "Company.CategoryOrProject.ProjectName",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
