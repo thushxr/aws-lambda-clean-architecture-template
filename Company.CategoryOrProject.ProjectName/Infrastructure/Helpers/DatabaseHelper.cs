@@ -6,7 +6,7 @@ namespace Company.CategoryOrProject.ProjectName.Infrastructure.Helpers;
 
 public class DatabaseHelper(Log log)
 {
-    public static string GetRdsDatabaseConnectionString(string databaseName)
+    private static string GetRdsDatabaseConnectionString(string databaseName)
     {
         return $"Server={SecretManagerHelper.RdsProxyHost};Port={SecretManagerHelper.Port};Database={databaseName};Uid={SecretManagerHelper.UserName};Pwd={SecretManagerHelper.Password}";
     }
