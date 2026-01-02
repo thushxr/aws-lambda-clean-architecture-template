@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <PackageId>Thushxr.AwsLambda.CleanArchitecture</PackageId>
     <Title>Aws lambda clean architecture project template</Title>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>thushxr</Authors>
     <Company>thushxr</Company>
     <Description>Lambda project built with production ready clean architecture style</Description>
@@ -19,10 +19,8 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<!-- Do not compile anything -->
         <Compile Remove="**\*" />
 
-        <!-- Pack EVERYTHING as template content -->
         <Content Include=".template.config\**\*"
             Pack="true"
             PackagePath="content\Company.CategoryOrProject.ProjectName\.template.config\" />
