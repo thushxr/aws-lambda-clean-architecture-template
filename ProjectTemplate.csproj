@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<PackageType>Template</PackageType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>Thushxr.AwsLambda.CleanArchitecture</PackageId>
+    <Title>Aws lambda clean architecture project template</Title>
+    <Version>1.0.3</Version>
+    <Authors>thushxr</Authors>
+    <Company>thushxr</Company>
+    <Description>Lambda project built with production ready clean architecture style</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/thushxr/aws-lambda-clean-architecture-template</RepositoryUrl>
+    <FileVersion>1.0.1</FileVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>aws; dotnet; lambda; cleanarchitecture;</PackageTags>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<!-- Do not compile anything -->
+        <Compile Remove="**\*" />
+
+        <!-- Pack EVERYTHING as template content -->
+        <Content Include=".template.config\**\*"
+            Pack="true"
+            PackagePath="content\Company.CategoryOrProject.ProjectName\.template.config\" />
+
+        <Content Include="Company.CategoryOrProject.ProjectName\**\*"
+            Exclude="Company.CategoryOrProject.ProjectName\**\bin\**;Company.CategoryOrProject.ProjectName\**\obj\**"
+            Pack="true"
+            PackagePath="content\Company.CategoryOrProject.ProjectName\Company.CategoryOrProject.ProjectName\" />
+
+        <Content Include="Company.CategoryOrProject.ProjectName.slnx"
+            Pack="true"
+            PackagePath="content\Company.CategoryOrProject.ProjectName\" />
+
+        <Content Include="README.md"
+            Pack="true"
+            PackagePath="content\Company.CategoryOrProject.ProjectName\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+</Project>

@@ -81,3 +81,6 @@ root/
 
 ### Repository
 Source code and documentation: https://github.com/thushxr/aws-lambda-clean-architecture-template
+
+### Note
+This project doesnt enforce the user to follow clean architecure, this is just used to be followed with clean architecture.
