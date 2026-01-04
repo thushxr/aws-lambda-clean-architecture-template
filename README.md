@@ -63,7 +63,7 @@ root/
 └─ Lambda/
    ├─ Function.cs --- main function
    ├─ FunctionBase.cs --- base Function
-   ├─ Function.csproj
+   ├─ ApplicationName.csproj
    └─ aws-lambda-tools-defaults.json
 ```
 
