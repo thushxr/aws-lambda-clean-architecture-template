@@ -84,3 +84,16 @@ Source code and documentation: https://github.com/thushxr/aws-lambda-clean-archi
 
 ### Note
 This project doesnt enforce the user to follow clean architecure, this is just used to be followed with clean architecture.
+
+### Contact
+If you face any issues with downloading or installation, or have feature requests or bug reports, feel free to reach out.
+
+<a href="https://www.linkedin.com/in/thushxr" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin" />
+</a>
+<a href="https://www.instagram.com/thushxr" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-Follow-pink?logo=instagram" />
+</a>
+<a href="https://twitter.com/thushxr" target="_blank">
+  <img src="https://img.shields.io/badge/Twitter-Follow-black?logo=x" />
+</a>
