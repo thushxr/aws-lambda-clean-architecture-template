@@ -79,6 +79,9 @@ root/
   - AWS Lambda entry point and configuration.
 
 
+### Nuget Package
+Check out the nuget template: https://www.nuget.org/packages/Thushxr.AwsLambda.CleanArchitecture
+
 ### Repository
 Source code and documentation: https://github.com/thushxr/aws-lambda-clean-architecture-template
 
