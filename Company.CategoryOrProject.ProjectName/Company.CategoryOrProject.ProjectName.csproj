@@ -18,15 +18,4 @@
 	<PackageReference Include="MySql.Data" Version="9.2.0" />
 	<PackageReference Include="Dapper" Version="2.1.66" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Application\Dtos\" />
-    <Folder Include="Application\Interfaces\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Core\Interfaces\" />
-    <Folder Include="Core\Entities\" />
-    <Folder Include="Core\Enums\" />
-    <Folder Include="Infrastructure\ExternalServices\" />
-    <Folder Include="Infrastructure\Repositories\" />
-	<None Include="README.md" Pack="true" PackagePath="" />
-  </ItemGroup>
 </Project>
