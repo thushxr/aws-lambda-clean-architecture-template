@@ -19,12 +19,6 @@ This NuGet template enables teams to quickly bootstrap scalable, maintainable La
 
 - .NET SDK **8.0** or later
 
-Install the AWS Lambda tools if not already installed:
-
-```bash
-dotnet tool install -g Amazon.Lambda.Tools
-```
-
 ### Installation
 
 - Install this template from Nuget
@@ -34,8 +28,13 @@ dotnet new install Thushxr.AwsLambda.CleanArchitecture
 ```
 
 ### Verify installation:
-```
+``` bash
 dotnet new --list
+```
+
+### Create folder and then:
+``` bash
+cd folderName
 ```
 
 ### Create a New Lambda Project
@@ -91,12 +90,4 @@ This project doesnt enforce the user to follow clean architecure, this is just u
 ### Contact
 If you face any issues with downloading or installation, or have feature requests or bug reports, feel free to reach out.
 
-<a href="https://www.linkedin.com/in/thushxr" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin" />
-</a>
-<a href="https://www.instagram.com/thushxr" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-Follow-pink?logo=instagram" />
-</a>
-<a href="https://twitter.com/thushxr" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-Follow-black?logo=x" />
-</a>
+[LinkedIn](https://www.linkedin.com/in/thushxr) | [Instagram](https://www.instagram.com/thushxr) | [Github](https://twitter.com/thushxr)
