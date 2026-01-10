@@ -24,7 +24,7 @@ This NuGet template enables teams to quickly bootstrap scalable, maintainable La
 - Install this template from Nuget
 
 ```bash
-dotnet new install Thushxr.AwsLambda.CleanArchitecture
+dotnet new install Thushar.AwsLambda.CleanArchitecture
 ```
 
 ### Verify installation:
@@ -32,14 +32,9 @@ dotnet new install Thushxr.AwsLambda.CleanArchitecture
 dotnet new --list
 ```
 
-### Create folder and then:
-``` bash
-cd folderName
-```
-
 ### Create a New Lambda Project
 ```bash
-dotnet new clean-lambda -n Company.ProjectOrCategory.ProjectName
+dotnet new cln-lambda -n Company.Domain.Project
 ```
 
 ### Project Structure
@@ -90,4 +85,4 @@ This project doesnt enforce the user to follow clean architecure, this is just u
 ### Contact
 If you face any issues with downloading or installation, or have feature requests or bug reports, feel free to reach out.
 
-[LinkedIn](https://www.linkedin.com/in/thushxr) | [Instagram](https://www.instagram.com/thushxr) | [Github](https://twitter.com/thushxr)
+[Mail](mailto:thushar8p@gmail.com) | [LinkedIn](https://www.linkedin.com/in/thushxr) | [Instagram](https://www.instagram.com/thushxr) | [Github](https://twitter.com/thushxr)

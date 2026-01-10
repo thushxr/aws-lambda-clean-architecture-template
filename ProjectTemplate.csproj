@@ -5,11 +5,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>Thushxr.AwsLambda.CleanArchitecture</PackageId>
+    <PackageId>Thushar.AwsLambda.CleanArchitecture</PackageId>
     <Title>Aws lambda clean architecture project template</Title>
-    <Version>1.0.6</Version>
+    <Version>1.0.0</Version>
     <Authors>thushxr</Authors>
-    <Company>thushxr</Company>
+    <Company>thushar</Company>
     <Description>Lambda project built with production ready clean architecture style</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/thushxr/aws-lambda-clean-architecture-template</RepositoryUrl>
@@ -25,16 +25,16 @@
             Pack="true"
             PackagePath="content\Company.CategoryOrProject.ProjectName\.template.config\" />
 
-        <Content Include="Company.CategoryOrProject.ProjectName\**\*"
-            Exclude="Company.CategoryOrProject.ProjectName\**\bin\**;Company.CategoryOrProject.ProjectName\**\obj\**"
+        <Content Include="Company.CategoryOrProject.ProjectName\Company.CategoryOrProject.ProjectName\**\*"
+            Exclude="Company.CategoryOrProject.ProjectName\Company.CategoryOrProject.ProjectName\**\bin\**;Company.CategoryOrProject.ProjectName\**\obj\**"
             Pack="true"
             PackagePath="content\Company.CategoryOrProject.ProjectName\Company.CategoryOrProject.ProjectName\" />
 
-        <Content Include="Company.CategoryOrProject.ProjectName.slnx"
+        <Content Include="Company.CategoryOrProject.ProjectName\Company.CategoryOrProject.ProjectName.slnx"
             Pack="true"
             PackagePath="content\Company.CategoryOrProject.ProjectName\" />
 
-        <Content Include="README.md"
+        <Content Include="Company.CategoryOrProject.ProjectName\Readme.md"
             Pack="true"
             PackagePath="content\Company.CategoryOrProject.ProjectName\" />
 	</ItemGroup>
